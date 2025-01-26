@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'outfit';
-    src: url(/fonts/outfit/fonts/outfit/static/Outfit-ExtraBold.ttf.ttf) type="ttf";
+    src: url(/fonts/Outfit/Outfit/Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'young';
-    src: url(/fonts/young-serif/YoungSerif-Regular.ttf) type="ttf";
+    src: url(/fonts/Young_Serif/YoungSerif-Regular.ttf);
 }
 
 :root {
@@ -15,17 +15,40 @@
     --fonte2: 'young';
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3e5d8;
+}
+
 h1 {
-    font-family: var(--fonte1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.2em;
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+    line-height: 1.8;
+}
+
+ul {
+    line-height: 1.8;
 }
 
 h2 {
     font-family: var(--fonte2);
+    margin: 20px;
+    color: #8f6e68;
+}
+
+ol {
+    line-height: 1.8;
 }
 
 main {
+    background-color: white;
     text-align: justify;
-    border: 1px solid black;
+    border-radius: 20px;
     padding: 20px;
     width: 980px;
     margin: 50px auto;
@@ -33,7 +56,59 @@ main {
 
 img {
     padding: 20px;
+    padding-bottom: 1px;
     margin: 15px auto;
     width: 940px;
     border-radius: 30px;
+}
+
+div {
+    background-color: rgba(128, 0, 128, 0.034);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+div h3 {
+    color: rgba(54, 3, 54, 0.767);
+    margin-left: 19px;
+}
+
+div ul {
+    line-height: 2.2;
+}
+
+table {
+    margin: 20px;
+    line-height: 1.8;
+}
+
+.tabela-nutricao {
+    
+    width: 700px;
+    border-collapse: collapse;
+}
+
+.tabela-nutricao tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.tabela-nutricao td {
+    padding: 8px 10px;
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
+.nome-tabela {
+    font-family: var(--fonte2);
+    font-weight: bold;
+    
+    color: #8f6e68;
+    text-align: left;
+}
+
+.numero-tabela {
+    color: #8f6e68;
+    font-weight: bolder;
+    text-align: right;
 }
