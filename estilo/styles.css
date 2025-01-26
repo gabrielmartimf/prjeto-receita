@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'outfit';
+    src: url(/fonts/outfit/fonts/outfit/static/Outfit-ExtraBold.ttf.ttf) type="ttf";
+}
+
+@font-face {
+    font-family: 'young';
+    src: url(/fonts/young-serif/YoungSerif-Regular.ttf) type="ttf";
+}
+
+:root {
+    --fonte1: 'outfit';
+    --fonte2: 'young';
+}
+
+h1 {
+    font-family: var(--fonte1);
+}
+
+h2 {
+    font-family: var(--fonte2);
+}
+
+main {
+    text-align: justify;
+    border: 1px solid black;
+    padding: 20px;
+    width: 980px;
+    margin: 50px auto;
+}
+
+img {
+    padding: 20px;
+    margin: 15px auto;
+    width: 940px;
+    border-radius: 30px;
+}
